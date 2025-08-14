@@ -49,12 +49,12 @@ print(f"最小値: {min_number(data_sp)}")
 
 
 # 平均値
-def sum_number(data_sp):
+def sum(data_sp):
     total = 0
     for i in data_sp:
         total += int(i)
     return total
 
-average = sum_number(data_sp) / data_sp_length 
+average = sum(data_sp) / data_sp_length 
 print(f"平均値: {average:.0f}")
 
