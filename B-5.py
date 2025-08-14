@@ -21,17 +21,40 @@ data_sp_length = len(data_sp)
 def sum_number(data_sp):
     total = 0
     for i in data_sp:
-        total += i
-    print(f"合計値: {sum_number(data_sp)}")
+        total += int(i)
+    return total
 
-
+print(f"合計値: {sum_number(data_sp)}")
 
 # 最大値
+def max_number(data_sp):
+    max_number = 0
+    for n in data_sp:
+        if int(n) > max_number:
+         max_number = int(n)
+    return max_number
+
+print(f"最大値: {max_number(data_sp)}")
 
 
 # 最小値
+def min_number(data_sp):
+    min_value = data_sp[0]
+    for n in data_sp[1:]:
+        if n < min_value:
+         min_value = n
+    return min_value
+
+print(f"最小値: {min_number(data_sp)}")
 
 
 # 平均値
+def sum_number(data_sp):
+    total = 0
+    for i in data_sp:
+        total += int(i)
+    return total
 
+average = sum_number(data_sp) / data_sp_length 
+print(f"平均値: {average:.0f}")
 
