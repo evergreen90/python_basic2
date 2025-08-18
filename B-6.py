@@ -9,8 +9,8 @@
 
 import random
 
-dice_faces = int(input("サイコロの面の数は?:"))
-dice_times = int(input("何回振りますか?:"))
+dice_faces = int(input("サイコロの面の数は?: "))
+dice_times = int(input("何回振りますか?: "))
 
 results = []
 for i in range(dice_times):
@@ -19,4 +19,3 @@ for i in range(dice_times):
 
 
 print(results)
-
