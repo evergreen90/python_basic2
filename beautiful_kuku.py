@@ -22,9 +22,9 @@ for i in range(1, row + 1):
         result = i * j
         answer = f" {result} | "
         if result < 10:
-            answer = f"  {result} | "
-        else:
             answer = f" {result} | "
+        else:
+            answer = f"{result} | "
 
         print(formula + answer, end=" ")
     print()
